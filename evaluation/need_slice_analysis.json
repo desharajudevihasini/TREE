@@ -1,0 +1,292 @@
+{
+  "source": "Official anonymised NEED 2026 50k sample",
+  "evaluation": "Existing held-out property-only models; no retraining, no cherry-picking",
+  "purpose": "Detect differences in prediction error across property types and regions; these are not protected-class fairness metrics.",
+  "groups": {
+    "electricity": {
+      "holdout_rows": 9043,
+      "mae_kwh": 1673.2,
+      "p90_absolute_error_kwh": 3417.12,
+      "categories": {
+        "PROP_TYPE": [
+          {
+            "category": "Semi detached",
+            "homes": 2326,
+            "mae_kwh": 1619.09,
+            "p90_absolute_error_kwh": 3219.33
+          },
+          {
+            "category": "Flat",
+            "homes": 2077,
+            "mae_kwh": 1644.8,
+            "p90_absolute_error_kwh": 3349.1
+          },
+          {
+            "category": "Mid terrace",
+            "homes": 1635,
+            "mae_kwh": 1395.04,
+            "p90_absolute_error_kwh": 2757.29
+          },
+          {
+            "category": "Detached",
+            "homes": 1483,
+            "mae_kwh": 2205.25,
+            "p90_absolute_error_kwh": 4617.21
+          },
+          {
+            "category": "End terrace",
+            "homes": 805,
+            "mae_kwh": 1571.22,
+            "p90_absolute_error_kwh": 3171.36
+          },
+          {
+            "category": "Bungalow",
+            "homes": 717,
+            "mae_kwh": 1579.35,
+            "p90_absolute_error_kwh": 3526.72
+          }
+        ],
+        "REGION": [
+          {
+            "category": "E12000008",
+            "homes": 1472,
+            "mae_kwh": 1903.46,
+            "p90_absolute_error_kwh": 4022.2
+          },
+          {
+            "category": "E12000007",
+            "homes": 1261,
+            "mae_kwh": 1669.74,
+            "p90_absolute_error_kwh": 3122.29
+          },
+          {
+            "category": "E12000002",
+            "homes": 1134,
+            "mae_kwh": 1554.05,
+            "p90_absolute_error_kwh": 3134.15
+          },
+          {
+            "category": "E12000006",
+            "homes": 955,
+            "mae_kwh": 1752.27,
+            "p90_absolute_error_kwh": 3615.53
+          },
+          {
+            "category": "E12000005",
+            "homes": 930,
+            "mae_kwh": 1646.6,
+            "p90_absolute_error_kwh": 3331.64
+          },
+          {
+            "category": "E12000009",
+            "homes": 850,
+            "mae_kwh": 1821.93,
+            "p90_absolute_error_kwh": 3813.77
+          },
+          {
+            "category": "E12000003",
+            "homes": 814,
+            "mae_kwh": 1466.0,
+            "p90_absolute_error_kwh": 2894.84
+          },
+          {
+            "category": "E12000004",
+            "homes": 747,
+            "mae_kwh": 1639.16,
+            "p90_absolute_error_kwh": 3289.54
+          },
+          {
+            "category": "W92000004",
+            "homes": 459,
+            "mae_kwh": 1663.58,
+            "p90_absolute_error_kwh": 3314.75
+          },
+          {
+            "category": "E12000001",
+            "homes": 421,
+            "mae_kwh": 1250.01,
+            "p90_absolute_error_kwh": 2425.47
+          }
+        ],
+        "EPC": [
+          {
+            "category": "No EPC",
+            "homes": 2810,
+            "mae_kwh": 1711.28,
+            "p90_absolute_error_kwh": 3412.56
+          },
+          {
+            "category": "D",
+            "homes": 2361,
+            "mae_kwh": 1660.68,
+            "p90_absolute_error_kwh": 3410.12
+          },
+          {
+            "category": "C",
+            "homes": 2175,
+            "mae_kwh": 1522.89,
+            "p90_absolute_error_kwh": 3079.46
+          },
+          {
+            "category": "A/B",
+            "homes": 957,
+            "mae_kwh": 1522.46,
+            "p90_absolute_error_kwh": 3022.29
+          },
+          {
+            "category": "E",
+            "homes": 641,
+            "mae_kwh": 2111.17,
+            "p90_absolute_error_kwh": 4342.72
+          },
+          {
+            "category": "F/G",
+            "homes": 99,
+            "mae_kwh": 2814.49,
+            "p90_absolute_error_kwh": 5940.13
+          }
+        ]
+      }
+    },
+    "gas": {
+      "holdout_rows": 7438,
+      "mae_kwh": 3928.82,
+      "p90_absolute_error_kwh": 8130.54,
+      "categories": {
+        "PROP_TYPE": [
+          {
+            "category": "Semi detached",
+            "homes": 2222,
+            "mae_kwh": 3898.26,
+            "p90_absolute_error_kwh": 8163.7
+          },
+          {
+            "category": "Mid terrace",
+            "homes": 1630,
+            "mae_kwh": 4048.76,
+            "p90_absolute_error_kwh": 8266.36
+          },
+          {
+            "category": "Detached",
+            "homes": 1204,
+            "mae_kwh": 4367.31,
+            "p90_absolute_error_kwh": 9336.36
+          },
+          {
+            "category": "Flat",
+            "homes": 1006,
+            "mae_kwh": 3456.51,
+            "p90_absolute_error_kwh": 6796.67
+          },
+          {
+            "category": "End terrace",
+            "homes": 745,
+            "mae_kwh": 3793.22,
+            "p90_absolute_error_kwh": 8058.68
+          },
+          {
+            "category": "Bungalow",
+            "homes": 631,
+            "mae_kwh": 3803.08,
+            "p90_absolute_error_kwh": 7815.83
+          }
+        ],
+        "REGION": [
+          {
+            "category": "E12000008",
+            "homes": 1161,
+            "mae_kwh": 3804.32,
+            "p90_absolute_error_kwh": 7623.19
+          },
+          {
+            "category": "E12000002",
+            "homes": 1053,
+            "mae_kwh": 3992.15,
+            "p90_absolute_error_kwh": 8230.73
+          },
+          {
+            "category": "E12000007",
+            "homes": 945,
+            "mae_kwh": 4712.87,
+            "p90_absolute_error_kwh": 9941.0
+          },
+          {
+            "category": "E12000006",
+            "homes": 776,
+            "mae_kwh": 3574.53,
+            "p90_absolute_error_kwh": 7421.24
+          },
+          {
+            "category": "E12000005",
+            "homes": 766,
+            "mae_kwh": 3969.08,
+            "p90_absolute_error_kwh": 8261.29
+          },
+          {
+            "category": "E12000003",
+            "homes": 749,
+            "mae_kwh": 3909.75,
+            "p90_absolute_error_kwh": 8070.05
+          },
+          {
+            "category": "E12000009",
+            "homes": 627,
+            "mae_kwh": 3388.45,
+            "p90_absolute_error_kwh": 6513.2
+          },
+          {
+            "category": "E12000004",
+            "homes": 626,
+            "mae_kwh": 3883.81,
+            "p90_absolute_error_kwh": 8007.05
+          },
+          {
+            "category": "E12000001",
+            "homes": 379,
+            "mae_kwh": 3617.17,
+            "p90_absolute_error_kwh": 7527.55
+          },
+          {
+            "category": "W92000004",
+            "homes": 356,
+            "mae_kwh": 4154.77,
+            "p90_absolute_error_kwh": 9039.17
+          }
+        ],
+        "EPC": [
+          {
+            "category": "No EPC",
+            "homes": 2417,
+            "mae_kwh": 4271.99,
+            "p90_absolute_error_kwh": 8625.3
+          },
+          {
+            "category": "D",
+            "homes": 2163,
+            "mae_kwh": 4105.38,
+            "p90_absolute_error_kwh": 8399.4
+          },
+          {
+            "category": "C",
+            "homes": 1680,
+            "mae_kwh": 3386.49,
+            "p90_absolute_error_kwh": 6866.26
+          },
+          {
+            "category": "A/B",
+            "homes": 642,
+            "mae_kwh": 2514.1,
+            "p90_absolute_error_kwh": 5017.73
+          },
+          {
+            "category": "E",
+            "homes": 492,
+            "mae_kwh": 4964.2,
+            "p90_absolute_error_kwh": 10388.31
+          }
+        ]
+      }
+    }
+  },
+  "warning": "NEED features are household/property proxies and groups vary in sample size. Error slices reveal performance differences but cannot establish societal fairness or individual reliability. No calibrations or models were selected from this test audit."
+}

@@ -1,0 +1,23 @@
+{
+  "dataset": "synthetic_generator_only",
+  "rows": 900,
+  "train_rows": 720,
+  "held_out_rows": 180,
+  "split_seed": 42,
+  "real_world_validation": false,
+  "warning": "Metrics are on synthetic labels from a documented generator; NOT UK household predictive accuracy.",
+  "targets": {
+    "annual_electricity_kwh": {
+      "mae": 656.74,
+      "rmse": 979.43,
+      "median_baseline_mae": 6168.94,
+      "median_baseline_rmse": 8166.67
+    },
+    "annual_gas_kwh": {
+      "mae": 428.03,
+      "rmse": 841.51,
+      "median_baseline_mae": 6379.04,
+      "median_baseline_rmse": 10807.89
+    }
+  }
+}

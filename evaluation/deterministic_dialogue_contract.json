@@ -1,0 +1,984 @@
+{
+  "cases": 108,
+  "contract_passed": 108,
+  "contract_failed": 0,
+  "mode": "deterministic_no_provider",
+  "not_a_provider_llm_groundedness_metric": true,
+  "organiser_llm_targets_verified": false,
+  "method": "Expected intent mode plus evidence-linked numeric comparison; not a semantic claim audit.",
+  "review_required": "To claim 90% groundedness and factual accuracy, run provider outputs and have independent human claim-level scoring.",
+  "results": [
+    {
+      "home": "manchester",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Manchester family home: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a31,649; versus the original \u00a32,065, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 41 to 52 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "manchester",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Manchester family home: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a32,188; versus the original \u00a32,065, that's \u00a3123/year higher. Electricity change: -3,733 kWh/year saved; gas change: 13,175 kWh/year saved (negative means more energy used). Operational carbon: 1,913 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 41 to 62 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "manchester",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft status unknown; confirm before recommending. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "manchester",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Manchester family home: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,045; versus the original \u00a32,065, that's \u00a3980/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 41 to 41 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "manchester",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Manchester family home: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,150; versus the original \u00a32,065, that's \u00a31,085/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 41 to 41 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "manchester",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 41/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. The score is provisional because some evidence is missing. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to confirm an unknown property detail?"
+    },
+    {
+      "home": "manchester",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "manchester",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "manchester",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Manchester family home after the selected package is \u00a3275,412\u2013\u00a3275,990. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Bristol terrace: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a31,271; versus the original \u00a31,687, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 43 to 54 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. heat pump: No modelled outdoor unit location. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Bristol terrace: Loft insulation. Installation estimate: \u00a3950. New annual bill: \u00a31,553; versus the original \u00a31,687, that's \u00a3134/year lower. Electricity change: 0 kWh/year saved; gas change: 1,912 kWh/year saved (negative means more energy used). Operational carbon: 349 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 43 to 51 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Bristol terrace: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,499; versus the original \u00a31,687, that's \u00a3812/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 43 to 43 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Bristol terrace: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,562; versus the original \u00a31,687, that's \u00a3875/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 43 to 43 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "bristol",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 43/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "bristol",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "bristol",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Bristol terrace after the selected package is \u00a3321,040\u2013\u00a3322,496. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "london",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. solar panels: No suitable roof modelled. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "london",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. heat pump: MVP replacement model only supports gas-boiler homes. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "london",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: No individual accessible loft modelled for this flat. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "london",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for London modern flat: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,744; versus the original \u00a31,372, that's \u00a31,372/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 71 to 71 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "london",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for London modern flat: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a31,372; versus the original \u00a31,372, that's \u00a30/year lower. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 71 to 71 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "london",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 71/100. The two lowest subscores are renewables (0/100), heating (35/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "london",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "london",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "london",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for London modern flat after the selected package is \u00a3490,000\u2013\u00a3490,000. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Leeds detached home: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a32,265; versus the original \u00a32,681, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 30 to 41 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Leeds detached home: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a32,852; versus the original \u00a32,681, that's \u00a3171/year higher. Electricity change: -5,178 kWh/year saved; gas change: 18,275 kWh/year saved (negative means more energy used). Operational carbon: 2,654 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 30 to 51 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Leeds detached home: Loft insulation. Installation estimate: \u00a3950. New annual bill: \u00a32,451; versus the original \u00a32,681, that's \u00a3230/year lower. Electricity change: 0 kWh/year saved; gas change: 3,290 kWh/year saved (negative means more energy used). Operational carbon: 600 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 30 to 39 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Leeds detached home: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,857; versus the original \u00a32,681, that's \u00a31,176/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 30 to 30 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Leeds detached home: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a34,186; versus the original \u00a32,681, that's \u00a31,505/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 30 to 30 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "leeds",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 30/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "leeds",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "leeds",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Leeds detached home after the selected package is \u00a3356,242\u2013\u00a3357,982. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Cardiff bungalow: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a31,271; versus the original \u00a31,687, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 54 to 66 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Cardiff bungalow: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a31,770; versus the original \u00a31,687, that's \u00a383/year higher. Electricity change: -2,529 kWh/year saved; gas change: 8,925 kWh/year saved (negative means more energy used). Operational carbon: 1,296 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 54 to 73 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft already insulated. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Cardiff bungalow: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,639; versus the original \u00a31,687, that's \u00a3952/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 54 to 54 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Cardiff bungalow: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,422; versus the original \u00a31,687, that's \u00a3735/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 54 to 54 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 54/100. The two lowest subscores are renewables (0/100), heating (40/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "cardiff",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "cardiff",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Cardiff bungalow after the selected package is \u00a3285,000\u2013\u00a3285,000. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Glasgow family semi: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a32,034; versus the original \u00a32,450, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 38 to 49 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Glasgow family semi: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a32,598; versus the original \u00a32,450, that's \u00a3148/year higher. Electricity change: -4,480 kWh/year saved; gas change: 15,810 kWh/year saved (negative means more energy used). Operational carbon: 2,296 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 38 to 59 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Glasgow family semi: Loft insulation. Installation estimate: \u00a3950. New annual bill: \u00a32,251; versus the original \u00a32,450, that's \u00a3199/year lower. Electricity change: 0 kWh/year saved; gas change: 2,846 kWh/year saved (negative means more energy used). Operational carbon: 519 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 38 to 47 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Glasgow family semi: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,598; versus the original \u00a32,450, that's \u00a31,148/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 38 to 38 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Glasgow family semi: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,752; versus the original \u00a32,450, that's \u00a31,302/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 38 to 38 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 38/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "glasgow",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "glasgow",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Glasgow family semi after the selected package is \u00a3260,910\u2013\u00a3262,184. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "bath",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. solar panels: No suitable roof modelled. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "bath",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. heat pump: No modelled outdoor unit location. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "bath",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft status unknown; confirm before recommending. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "bath",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Bath period terrace: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,856; versus the original \u00a32,016, that's \u00a3840/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 34 to 34 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "bath",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Bath period terrace: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,192; versus the original \u00a32,016, that's \u00a31,176/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 34 to 34 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "bath",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 34/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. The score is provisional because some evidence is missing. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to confirm an unknown property detail?"
+    },
+    {
+      "home": "bath",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "bath",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "bath",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Bath period terrace after the selected package is \u00a3575,862\u2013\u00a3577,070. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. solar panels: Solar already present; expansion outside MVP scope. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. heat pump: MVP replacement model only supports gas-boiler homes. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft already insulated. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Oxford efficient house: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a33,248; versus the original \u00a31,624, that's \u00a31,624/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 91 to 91 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Oxford efficient house: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a31,624; versus the original \u00a31,624, that's \u00a30/year lower. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 91 to 91 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "oxford",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 91/100. The two lowest subscores are energy efficiency (85/100), insulation (90.0/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "oxford",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "oxford",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Oxford efficient house after the selected package is \u00a3530,000\u2013\u00a3530,000. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Norwich terrace: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a3970; versus the original \u00a31,386, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 59 to 71 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Norwich terrace: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a31,457; versus the original \u00a31,386, that's \u00a371/year higher. Electricity change: -2,168 kWh/year saved; gas change: 7,650 kWh/year saved (negative means more energy used). Operational carbon: 1,111 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 59 to 78 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft already insulated. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Norwich terrace: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,142; versus the original \u00a31,386, that's \u00a3756/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 59 to 59 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Norwich terrace: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,016; versus the original \u00a31,386, that's \u00a3630/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 59 to 59 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "norwich",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 59/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "norwich",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "norwich",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Norwich terrace after the selected package is \u00a3230,288\u2013\u00a3230,690. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Newcastle detached: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a32,482; versus the original \u00a32,898, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 35 to 45 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Newcastle detached: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a33,074; versus the original \u00a32,898, that's \u00a3176/year higher. Electricity change: -5,346 kWh/year saved; gas change: 18,870 kWh/year saved (negative means more energy used). Operational carbon: 2,740 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 35 to 55 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Newcastle detached: Loft insulation. Installation estimate: \u00a3950. New annual bill: \u00a32,660; versus the original \u00a32,898, that's \u00a3238/year lower. Electricity change: 0 kWh/year saved; gas change: 3,397 kWh/year saved (negative means more energy used). Operational carbon: 619 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 35 to 43 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Newcastle detached: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a34,242; versus the original \u00a32,898, that's \u00a31,344/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 35 to 35 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Newcastle detached: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a34,452; versus the original \u00a32,898, that's \u00a31,554/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 35 to 35 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 35/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "newcastle",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "newcastle",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Newcastle detached after the selected package is \u00a3311,008\u2013\u00a3312,418. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Birmingham starter home: Solar panels (3 kWp). Installation estimate: \u00a35,500. New annual bill: \u00a3991; versus the original \u00a31,407, that's \u00a3416/year lower. Electricity change: 1,485 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 194 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 51 to 63 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. heat pump: No modelled outdoor unit location. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft status unknown; confirm before recommending. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Birmingham starter home: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,107; versus the original \u00a31,407, that's \u00a3700/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 51 to 51 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Birmingham starter home: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a32,114; versus the original \u00a31,407, that's \u00a3707/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 51 to 51 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 51/100. The two lowest subscores are renewables (0/100), smart management (10/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. The score is provisional because some evidence is missing. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to confirm an unknown property detail?"
+    },
+    {
+      "home": "birmingham",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "birmingham",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Birmingham starter home after the selected package is \u00a3205,256\u2013\u00a3205,615. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What if I install solar panels?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. solar panels: Solar already present; expansion outside MVP scope. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What if I install a heat pump?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Exeter solar bungalow: Heat pump. Installation estimate: \u00a38,500. New annual bill: \u00a31,134; versus the original \u00a31,064, that's \u00a370/year higher. Electricity change: -2,119 kWh/year saved; gas change: 7,480 kWh/year saved (negative means more energy used). Operational carbon: 1,086 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 75 to 93 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What if I install loft insulation?",
+      "result_mode": "infeasible",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't model that package as feasible yet. loft insulation: Loft already insulated. Please confirm the missing property information or choose another upgrade."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What if electricity prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Exeter solar bungalow: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a31,512; versus the original \u00a31,064, that's \u00a3448/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 75 to 75 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What if gas prices double?",
+      "result_mode": "what_if",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I recalculated the scenario for Exeter solar bungalow: no physical retrofits; tariff change only. Installation estimate: \u00a30. New annual bill: \u00a31,680; versus the original \u00a31,064, that's \u00a3616/year higher. Electricity change: 0 kWh/year saved; gas change: 0 kWh/year saved (negative means more energy used). Operational carbon: 0 kg CO2e/year lower, using documented 2026 UK factors. Modelled Green Home Score: 75 to 75 (not an official EPC reassessment). Property-value change is only an unvalidated scenario illustration, not an estimate supported by comparable actual sales. These are modelled estimates using illustrative retrofit assumptions, not guarantees."
+    },
+    {
+      "home": "exeter",
+      "prompt": "How is my Green Home Score calculated?",
+      "result_mode": "score_why",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "Your score is 75/100. The two lowest subscores are heating (40/100), energy efficiency (72/100). Each component uses the exact official PPT weight, with a documented TREE-specific mapping. All core score inputs are present. The evidence table below shows every input and contribution.\n\nTREE asks: Would you like to compare a retrofit package?"
+    },
+    {
+      "home": "exeter",
+      "prompt": "Are these actual Lloyds customer data?",
+      "result_mode": "provenance",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "TREE's demo homes are synthetic, not Lloyds customer records. Live EPC lookup requires configured provider credentials and explicit address confirmation; without these, no live EPC has been retrieved. A UK NEED 2026 held-out benchmark evaluates population energy prediction, not this home's retrofit savings. Retrofit costs and effects and the property-value relationship remain illustrative assumptions. Carbon is calculated from documented 2026 DESNZ factors for grid electricity and natural gas combustion. I cannot guarantee outcomes or issue an EPC certificate."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What if I install a nuclear microreactor?",
+      "result_mode": "clarification",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "I can't evaluate the full requested package because these are outside TREE's current calculation model: nuclear reactor. I won't silently ignore part of a package. Please choose supported upgrades instead."
+    },
+    {
+      "home": "exeter",
+      "prompt": "What is my property value impact?",
+      "result_mode": "value",
+      "source": "deterministic_grounded",
+      "contract_pass": true,
+      "reason": "",
+      "response": "The model's illustrative value range for Exeter solar bungalow after the selected package is \u00a3345,000\u2013\u00a3345,000. This is a synthetic sensitivity example, NOT an observed sale-price effect or proven causal uplift. A credible value impact would require location-controlled actual housing transaction data."
+    }
+  ]
+}

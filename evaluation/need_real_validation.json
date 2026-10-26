@@ -1,0 +1,129 @@
+{
+  "project": "TREE",
+  "dataset": "UK government NEED 2026 anonymised 50,000-row sample",
+  "source": "https://www.gov.uk/government/statistics/national-energy-efficiency-data-framework-need-anonymised-data-2026",
+  "source_file": "anon2026_50k.csv",
+  "target_year": 2024,
+  "raw_rows": 50000,
+  "features": [
+    "PROP_TYPE",
+    "PROP_AGE_BAND",
+    "FLOOR_AREA_BAND",
+    "REGION",
+    "MAIN_HEAT_FUEL"
+  ],
+  "observed_labels_only": true,
+  "evaluation": "Random Forest on real NEED data; separate 80/20 holdout per fuel",
+  "relation_to_synthetic_model": "Separate real-data-trained benchmark; NOT external validation of the original synthetic-trained model",
+  "limitations": "Anonymised sample; coarse banded property features; may not cover all housing types. Features are not necessarily known to precede the 2024 energy period. One random held-out split is not prospective validation. Results do not validate retrofit savings, Green Home Score, or monetary predictions.",
+  "fuels": {
+    "electricity": {
+      "valid_records_before_sampling": 45214,
+      "used_records": 45214,
+      "training_records": 36171,
+      "held_out_test_records": 9043,
+      "random_forest": {
+        "mae_kwh_per_year": 1698.51,
+        "rmse_kwh_per_year": 2502.16,
+        "r2": 0.1309
+      },
+      "median_baseline": {
+        "mae_kwh_per_year": 1706.83,
+        "rmse_kwh_per_year": 2779.37,
+        "r2": -0.0724
+      },
+      "property_type_breakdown": {
+        "Detached": {
+          "rows": 1483,
+          "mae_kwh_per_year": 2246.58,
+          "rmse_kwh_per_year": 3247.87,
+          "r2": 0.0805
+        },
+        "Bungalow": {
+          "rows": 717,
+          "mae_kwh_per_year": 1581.51,
+          "rmse_kwh_per_year": 2474.79,
+          "r2": 0.1967
+        },
+        "Semi detached": {
+          "rows": 2326,
+          "mae_kwh_per_year": 1636.43,
+          "rmse_kwh_per_year": 2376.94,
+          "r2": 0.0693
+        },
+        "Flat": {
+          "rows": 2077,
+          "mae_kwh_per_year": 1703.64,
+          "rmse_kwh_per_year": 2486.01,
+          "r2": 0.1331
+        },
+        "Mid terrace": {
+          "rows": 1635,
+          "mae_kwh_per_year": 1375.72,
+          "rmse_kwh_per_year": 1977.99,
+          "r2": 0.1286
+        },
+        "End terrace": {
+          "rows": 805,
+          "mae_kwh_per_year": 1614.83,
+          "rmse_kwh_per_year": 2286.04,
+          "r2": 0.0173
+        }
+      }
+    },
+    "gas": {
+      "valid_records_before_sampling": 37186,
+      "used_records": 37186,
+      "training_records": 29748,
+      "held_out_test_records": 7438,
+      "random_forest": {
+        "mae_kwh_per_year": 4039.1,
+        "rmse_kwh_per_year": 5505.32,
+        "r2": 0.311
+      },
+      "median_baseline": {
+        "mae_kwh_per_year": 4862.34,
+        "rmse_kwh_per_year": 6746.53,
+        "r2": -0.0347
+      },
+      "property_type_breakdown": {
+        "Detached": {
+          "rows": 1204,
+          "mae_kwh_per_year": 4532.46,
+          "rmse_kwh_per_year": 6196.82,
+          "r2": 0.33
+        },
+        "Semi detached": {
+          "rows": 2222,
+          "mae_kwh_per_year": 4017.31,
+          "rmse_kwh_per_year": 5410.89,
+          "r2": 0.2678
+        },
+        "Mid terrace": {
+          "rows": 1630,
+          "mae_kwh_per_year": 4106.04,
+          "rmse_kwh_per_year": 5612.27,
+          "r2": 0.125
+        },
+        "End terrace": {
+          "rows": 745,
+          "mae_kwh_per_year": 3857.07,
+          "rmse_kwh_per_year": 5269.55,
+          "r2": 0.1369
+        },
+        "Bungalow": {
+          "rows": 631,
+          "mae_kwh_per_year": 4122.51,
+          "rmse_kwh_per_year": 5264.66,
+          "r2": 0.1932
+        },
+        "Flat": {
+          "rows": 1006,
+          "mae_kwh_per_year": 3470.79,
+          "rmse_kwh_per_year": 4947.85,
+          "r2": 0.1272
+        }
+      }
+    }
+  }
+}

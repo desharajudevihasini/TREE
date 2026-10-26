@@ -1,0 +1,204 @@
+{
+  "source": "UK Government NEED 2026 anonymised 50k sample",
+  "raw_rows": 50000,
+  "design": "train 60%, validation 20%, untouched test 20%; seed 42; best validation MAE",
+  "warning": "Separate NEED-trained models, not external validation of TREE synthetic-trained model. No retrofit causal effects tested.",
+  "experiments": {
+    "electricity_property_only": {
+      "rows": 45214,
+      "train_validation_rows": 36171,
+      "test_rows": 9043,
+      "features": [
+        "PROP_TYPE",
+        "PROP_AGE_BAND",
+        "FLOOR_AREA_BAND",
+        "REGION",
+        "MAIN_HEAT_FUEL",
+        "CONSERVATORY_FLAG",
+        "COUNCIL_TAX_BAND",
+        "EPC",
+        "LI_FLAG",
+        "CWI_FLAG",
+        "PV_FLAG"
+      ],
+      "chosen_on_validation": "hist_gradient_boosting",
+      "validation_candidates": {
+        "ridge": {
+          "mae_kwh": 1668.94,
+          "rmse_kwh": 2465.09,
+          "r2": 0.1256
+        },
+        "extra_trees": {
+          "mae_kwh": 1693.85,
+          "rmse_kwh": 2516.76,
+          "r2": 0.0886
+        },
+        "hist_gradient_boosting": {
+          "mae_kwh": 1655.94,
+          "rmse_kwh": 2453.41,
+          "r2": 0.1339
+        }
+      },
+      "test": {
+        "mae_kwh": 1673.2,
+        "rmse_kwh": 2459.04,
+        "r2": 0.1606
+      },
+      "test_median_baseline": {
+        "mae_kwh": 1706.83,
+        "rmse_kwh": 2779.37,
+        "r2": -0.0724
+      }
+    },
+    "electricity_with_prior_year_bill": {
+      "rows": 42785,
+      "train_validation_rows": 34228,
+      "test_rows": 8557,
+      "features": [
+        "PROP_TYPE",
+        "PROP_AGE_BAND",
+        "FLOOR_AREA_BAND",
+        "REGION",
+        "MAIN_HEAT_FUEL",
+        "CONSERVATORY_FLAG",
+        "COUNCIL_TAX_BAND",
+        "EPC",
+        "LI_FLAG",
+        "CWI_FLAG",
+        "PV_FLAG",
+        "prior_year_kwh"
+      ],
+      "chosen_on_validation": "hist_gradient_boosting",
+      "validation_candidates": {
+        "ridge": {
+          "mae_kwh": 932.41,
+          "rmse_kwh": 1643.02,
+          "r2": 0.6206
+        },
+        "extra_trees": {
+          "mae_kwh": 931.55,
+          "rmse_kwh": 1647.34,
+          "r2": 0.6186
+        },
+        "hist_gradient_boosting": {
+          "mae_kwh": 919.78,
+          "rmse_kwh": 1644.65,
+          "r2": 0.6198
+        }
+      },
+      "test": {
+        "mae_kwh": 908.02,
+        "rmse_kwh": 1598.08,
+        "r2": 0.6358
+      },
+      "test_median_baseline": {
+        "mae_kwh": 1688.49,
+        "rmse_kwh": 2747.9,
+        "r2": -0.0769
+      },
+      "test_prior_year_copy_baseline": {
+        "mae_kwh": 885.98,
+        "rmse_kwh": 1677.79,
+        "r2": 0.5986
+      }
+    },
+    "gas_property_only": {
+      "rows": 37186,
+      "train_validation_rows": 29748,
+      "test_rows": 7438,
+      "features": [
+        "PROP_TYPE",
+        "PROP_AGE_BAND",
+        "FLOOR_AREA_BAND",
+        "REGION",
+        "MAIN_HEAT_FUEL",
+        "CONSERVATORY_FLAG",
+        "COUNCIL_TAX_BAND",
+        "EPC",
+        "LI_FLAG",
+        "CWI_FLAG",
+        "PV_FLAG"
+      ],
+      "chosen_on_validation": "hist_gradient_boosting",
+      "validation_candidates": {
+        "ridge": {
+          "mae_kwh": 4001.51,
+          "rmse_kwh": 5482.59,
+          "r2": 0.332
+        },
+        "extra_trees": {
+          "mae_kwh": 4067.45,
+          "rmse_kwh": 5560.23,
+          "r2": 0.3129
+        },
+        "hist_gradient_boosting": {
+          "mae_kwh": 3947.12,
+          "rmse_kwh": 5417.5,
+          "r2": 0.3478
+        }
+      },
+      "test": {
+        "mae_kwh": 3928.82,
+        "rmse_kwh": 5401.82,
+        "r2": 0.3367
+      },
+      "test_median_baseline": {
+        "mae_kwh": 4862.34,
+        "rmse_kwh": 6746.53,
+        "r2": -0.0347
+      }
+    },
+    "gas_with_prior_year_bill": {
+      "rows": 35491,
+      "train_validation_rows": 28392,
+      "test_rows": 7099,
+      "features": [
+        "PROP_TYPE",
+        "PROP_AGE_BAND",
+        "FLOOR_AREA_BAND",
+        "REGION",
+        "MAIN_HEAT_FUEL",
+        "CONSERVATORY_FLAG",
+        "COUNCIL_TAX_BAND",
+        "EPC",
+        "LI_FLAG",
+        "CWI_FLAG",
+        "PV_FLAG",
+        "prior_year_kwh"
+      ],
+      "chosen_on_validation": "ridge",
+      "validation_candidates": {
+        "ridge": {
+          "mae_kwh": 1718.59,
+          "rmse_kwh": 2893.25,
+          "r2": 0.8008
+        },
+        "extra_trees": {
+          "mae_kwh": 1749.87,
+          "rmse_kwh": 2919.2,
+          "r2": 0.7972
+        },
+        "hist_gradient_boosting": {
+          "mae_kwh": 1719.67,
+          "rmse_kwh": 2895.44,
+          "r2": 0.8005
+        }
+      },
+      "test": {
+        "mae_kwh": 1752.45,
+        "rmse_kwh": 2966.62,
+        "r2": 0.8039
+      },
+      "test_median_baseline": {
+        "mae_kwh": 4883.21,
+        "rmse_kwh": 6812.58,
+        "r2": -0.0342
+      },
+      "test_prior_year_copy_baseline": {
+        "mae_kwh": 1725.98,
+        "rmse_kwh": 3113.75,
+        "r2": 0.784
+      }
+    }
+  }
+}

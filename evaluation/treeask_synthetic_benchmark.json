@@ -1,0 +1,900 @@
+{
+  "dataset": "Synthetic demo homes with one known binary field deliberately hidden",
+  "method": "Compare one TreeAsk question with a static five-question checklist; ground truth is the original synthetic demo record",
+  "not_real_world_validation": true,
+  "cases": 57,
+  "treeask_one_question_matches_complete_plan": 54,
+  "treeask_asks_hidden_field_first": 17,
+  "initial_plan_matches_complete_plan": 45,
+  "fixed_form_questions": 5,
+  "important_limitation": "Fixed-form completion would use all five answers. This test does not establish that one question is always enough, or that outcomes are correct for real households.",
+  "case_details": [
+    {
+      "home": "manchester",
+      "hidden_field": "wall_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "manchester",
+      "hidden_field": "roof_suitable",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "manchester",
+      "hidden_field": "outdoor_space",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "manchester",
+      "hidden_field": "smart_controls",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": false,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "bristol",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "bristol",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "bristol",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "bristol",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "bristol",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "loft_insulation"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "london",
+      "hidden_field": "loft_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "london",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "london",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "london",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "london",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "leeds",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "leeds",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "leeds",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "leeds",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "leeds",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "loft_insulation"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "cardiff",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "cardiff",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "cardiff",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "cardiff",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "cardiff",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "glasgow",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "glasgow",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "glasgow",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "glasgow",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "glasgow",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "loft_insulation"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "bath",
+      "hidden_field": "wall_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "bath",
+      "hidden_field": "roof_suitable",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "bath",
+      "hidden_field": "outdoor_space",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "bath",
+      "hidden_field": "smart_controls",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": false,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "oxford",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "oxford",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "oxford",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "oxford",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "oxford",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "norwich",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "norwich",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "norwich",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "norwich",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "norwich",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "newcastle",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "newcastle",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "newcastle",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "newcastle",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "newcastle",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [
+        "loft_insulation"
+      ],
+      "plan_after_one_answer": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "loft_insulation",
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "birmingham",
+      "hidden_field": "wall_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "birmingham",
+      "hidden_field": "roof_suitable",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "birmingham",
+      "hidden_field": "outdoor_space",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [
+        "smart_controls"
+      ],
+      "plan_after_one_answer": [
+        "smart_controls"
+      ],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "birmingham",
+      "hidden_field": "smart_controls",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [
+        "smart_controls"
+      ],
+      "one_question_reaches_complete_record_plan": false,
+      "initial_plan_matches_complete_record": false
+    },
+    {
+      "home": "exeter",
+      "hidden_field": "loft_insulated",
+      "asked_field": "loft_insulated",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "exeter",
+      "hidden_field": "wall_insulated",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "exeter",
+      "hidden_field": "roof_suitable",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "exeter",
+      "hidden_field": "outdoor_space",
+      "asked_field": null,
+      "asks_hidden_field_first": false,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    },
+    {
+      "home": "exeter",
+      "hidden_field": "smart_controls",
+      "asked_field": "smart_controls",
+      "asks_hidden_field_first": true,
+      "plan_before": [],
+      "plan_after_one_answer": [],
+      "plan_with_complete_record": [],
+      "one_question_reaches_complete_record_plan": true,
+      "initial_plan_matches_complete_record": true
+    }
+  ]
+}

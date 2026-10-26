@@ -1,0 +1,107 @@
+{
+  "checks": [
+    {
+      "check": "webpage",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "javascript",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "gps_outside_uk",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "no_credentials_epc",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "questions",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "home_score",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "score_reasons",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "full_report",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "energy_baseline",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "retrofits",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "budget_optimize",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "carbon_factors",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "real_ml_evaluation",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "finance_notifications",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "extended_household",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "chat_start",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "chat_what_if",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "chat_follow_up",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "check": "real_data_status",
+      "status_code": 200,
+      "ok": true
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "all_passed": true,
+  "score_component_count": 7,
+  "chat_modes": [
+    "score_why",
+    "what_if"
+  ]
+}

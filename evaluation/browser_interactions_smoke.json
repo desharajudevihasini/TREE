@@ -1,0 +1,9 @@
+{
+  "mode": "Chromium with FastAPI responses bridged in-memory; no live navigation",
+  "manual_onboarding": true,
+  "score_components": 7,
+  "chat": true,
+  "appliances": true,
+  "habits": true,
+  "javascript_errors": []
+}

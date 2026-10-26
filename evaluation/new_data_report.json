@@ -1,0 +1,28 @@
+{
+  "model": "original_RF_models_trained_on_synthetic_examples",
+  "dataset": "data/new_homes_example_SYNTHETIC.csv",
+  "rows_predicted": 14,
+  "real_world_validated": false,
+  "data_source_verified": false,
+  "warning": "This script does not authenticate source records. Results on illustrative CSVs are NOT real-world validation.",
+  "targets": {
+    "annual_electricity_kwh": {
+      "tested_on_labeled_rows": 14,
+      "training_median_baseline_mae_kwh_per_year": 5563.61,
+      "mae_kwh_per_year": 836.82,
+      "rmse_kwh_per_year": 1074.75,
+      "r2": 0.9745,
+      "status": "measured_against_supplied_labels_source_not_independently_verified"
+    },
+    "annual_gas_kwh": {
+      "tested_on_labeled_rows": 14,
+      "training_median_baseline_mae_kwh_per_year": 4669.28,
+      "mae_kwh_per_year": 389.28,
+      "rmse_kwh_per_year": 986.81,
+      "r2": 0.9867,
+      "status": "measured_against_supplied_labels_source_not_independently_verified"
+    }
+  },
+  "input_shift_warnings": [],
+  "limitations": "Input-shift checks are not uncertainty estimates; supplied labels and their provenance must be independently verified."
+}
