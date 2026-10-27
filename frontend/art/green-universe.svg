@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#282a98"/><stop offset=".52" stop-color="#171f82"/><stop offset="1" stop-color="#080e55"/></linearGradient>
+ <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#e3a94d"/><stop offset=".36" stop-color="#ffdc88"/><stop offset=".72" stop-color="#ffe9a1"/><stop offset="1" stop-color="#bd8039"/></linearGradient>
+ <linearGradient id="rocket" x1="0" x2="1"><stop stop-color="#d4eefa"/><stop offset=".45" stop-color="#fff8c5"/><stop offset="1" stop-color="#b8d0ed"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#5966dc" stop-opacity=".65"/><stop offset="1" stop-color="#5666cd" stop-opacity="0"/></radialGradient>
+ <pattern id="stars" width="155" height="135" patternUnits="userSpaceOnUse"><circle cx="24" cy="28" r="1.5" fill="#fff7d8"/><circle cx="102" cy="75" r="1" fill="#9ac9f5"/><circle cx="120" cy="17" r="2.2" fill="#fff1b3"/></pattern>
+ <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<path fill="url(#sky)" d="M0 0h1600v900H0z"/><ellipse cx="775" cy="430" rx="650" ry="550" fill="url(#glow)" opacity=".7"/><path fill="url(#stars)" d="M0 0h1600v900H0z"/>
+<!-- Wispy, hand-drawn space trails -->
+<path d="M25 152Q120 125 217 181M1319 130q104-36 225-2M1380 284q89-34 174-20M41 380q64-19 122 2" fill="none" stroke="#b2c6fe" stroke-width="2.3" opacity=".66" stroke-linecap="round"/>
+<path d="M0 100q115-67 235 4M1410 108q93 25 149 80" fill="none" stroke="#fff1a7" stroke-width="2" stroke-dasharray="4 24" opacity=".35"/>
+<!-- Moon and textured planet -->
+<circle cx="1383" cy="190" r="85" fill="#fff0b1" opacity=".11"/><circle cx="1383" cy="190" r="57" fill="#ffdd7c"/><circle cx="1360" cy="175" r="12" fill="#eaba66"/><circle cx="1406" cy="206" r="8" fill="#eaba66"/><circle cx="1406" cy="164" r="6" fill="#eaba66"/>
+<path d="M1329 207q64-49 112-33" stroke="#ffe9c5" stroke-width="4" stroke-linecap="round" fill="none"/>
+<!-- Tiny green rocket upper right -->
+<g transform="translate(1233 35) rotate(26)">
+ <path d="M32 22Q80 8 102 74l-8 104H20L10 81Q13 42 32 22Z" fill="url(#rocket)" stroke="#0a245e" stroke-width="7"/>
+ <path d="M32 22Q50-2 77 27L66 67H22Z" fill="#32b8c8" stroke="#0a245e" stroke-width="6"/>
+ <circle cx="55" cy="94" r="22" fill="#75c9e9" stroke="#0e3672" stroke-width="7"/><circle cx="50" cy="89" r="9" fill="#fff6c3" opacity=".85"/>
+ <path d="M19 118-14 151v45l38-18m77-60 36 33v45l-43-18" fill="#f1ac75" stroke="#0a245e" stroke-width="7" stroke-linejoin="round"/>
+ <path d="M37 176 34 232 57 206l22 29-6-59" fill="#ffe377" stroke="#e87761" stroke-width="7" stroke-linejoin="round"/>
+</g>
+<!-- Left golden tower inspired by a storybook campus tower, original SVG -->
+<g transform="translate(74 176) rotate(-4 190 440)">
+ <ellipse cx="215" cy="679" rx="195" ry="25" fill="#060b38" opacity=".5"/>
+ <path d="M74 676V256h260v420" fill="url(#gold)" stroke="#543b48" stroke-width="9"/>
+ <path d="M91 676V273h35v403M297 273h23v403" fill="#c78b48" opacity=".7"/>
+ <path d="M56 270 76 211h253l27 59Z" fill="#f9d576" stroke="#583747" stroke-width="8"/>
+ <path d="M91 209V139h226v70" fill="#fae09b" stroke="#563848" stroke-width="8"/>
+ <path d="m74 143 132-103 129 103Z" fill="#e6a44f" stroke="#54374a" stroke-width="9" stroke-linejoin="round"/>
+ <path d="m109 140 97-71 90 71" fill="none" stroke="#fff0b3" stroke-width="6"/>
+ <path d="M195 42V10h23v32M172 8h71" stroke="#ffd981" stroke-width="8" stroke-linecap="round"/>
+ <path d="M165 177q40-58 83 0v58h-83Z" fill="#243678" stroke="#563848" stroke-width="8"/>
+ <path d="M192 167v67m29-65v65" stroke="#ffe8a8" stroke-width="5"/>
+ <path d="M75 334h260v25H75zm0 176h260v25H75z" fill="#dbac63" stroke="#79504f" stroke-width="5"/>
+ <g fill="#1c2e70" stroke="#6e4d51" stroke-width="7">
+   <path d="M115 395q35-40 67 0v91h-67Z"/><path d="M222 395q35-40 67 0v91h-67Z"/>
+   <path d="M115 561q35-40 67 0v86h-67Z"/><path d="M222 561q35-40 67 0v86h-67Z"/>
+ </g>
+ <g stroke="#f9de9e" stroke-width="4"><path d="M149 379v105m107-105v105M149 548v100m107-100v100"/></g>
+ <path d="M65 660h284v24H65" fill="#d09a56" stroke="#493948" stroke-width="7"/>
+</g>
+<!-- Right eco house: large decorative building with solar roof -->
+<g transform="translate(1194 482) rotate(5 180 200)">
+ <ellipse cx="180" cy="396" rx="220" ry="33" fill="#060d48" opacity=".55"/>
+ <path d="M30 186 174 55l167 142v188H30Z" fill="#fff0b7" stroke="#10266b" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M8 192 173 33 363 190" fill="none" stroke="#ea7d72" stroke-width="31" stroke-linejoin="round" stroke-linecap="round"/>
+ <path d="M8 192 173 33 363 190" fill="none" stroke="#132b71" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+ <path d="m113 96 69-53 75 64-67 8Z" fill="#2f6891" stroke="#10266b" stroke-width="7"/>
+ <path d="m143 70 40 39m-5-65 42 56" stroke="#90d7ec" stroke-width="5"/>
+ <rect x="68" y="235" width="83" height="89" rx="9" fill="#90d9e5" stroke="#12286a" stroke-width="9"/>
+ <path d="M110 240v82M69 279h82" stroke="#12286a" stroke-width="7"/>
+ <rect x="237" y="224" width="77" height="161" rx="7" fill="#db9e61" stroke="#12286a" stroke-width="10"/>
+ <circle cx="291" cy="301" r="6" fill="#152568"/>
+ <path d="M25 386h337" stroke="#0e6454" stroke-width="17" stroke-linecap="round"/>
+ <path d="M276 73q30-52 63-15m-5-20 21 21" stroke="#fbe08d" stroke-width="7" fill="none" stroke-linecap="round"/>
+</g>
+<!-- Foreground irregular forest silhouettes -->
+<path d="M0 808Q167 745 317 810Q507 748 671 823Q847 774 1060 813Q1301 770 1600 810V900H0Z" fill="#12245e"/>
+<path d="M0 852Q245 792 492 844Q748 799 970 844Q1250 790 1600 837V900H0Z" fill="#091649"/>
+<g fill="#0b1c4c"><path d="m22 865 43-117 37 117zm95-8 26-87 33 87zm217 3 33-127 37 127zm114 8 28-83 29 83zm544-2 43-109 38 109zm80-3 32-69 26 69zm382-9 39-115 42 115z"/></g>
+<g stroke="#ffdf88" fill="none" stroke-width="3" stroke-linecap="round"><path d="m471 221-9-10m7 17-16 3m26-14 12-11m-12 23 16 4M1109 284l-8-11m7 20-13 6m22-20 10-9m-8 27 14 7M1132 120l-7-9m5 16-12 3m20-13 8-11m-3 24 10 4"/></g>
+</svg>

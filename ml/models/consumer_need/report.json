@@ -1,0 +1,85 @@
+{
+  "name": "TREE real NEED consumer-compatible cold-start benchmark",
+  "source": "UK Government NEED 2026 anonymised 50,000-row sample (consumption year 2024)",
+  "features": "home type and grouped EPC band only; no personal bills used",
+  "training": "60% training, 20% validation, 20% test; fixed random_state 42; compare two models and a median baseline",
+  "disclaimer": "This establishes accuracy only on held-out anonymised NEED homes with these coarse features, NOT this homeowner, specific EPC address, or retrofit outcomes.",
+  "experiments": {
+    "electricity": {
+      "valid_rows": 45214,
+      "test_rows": 9043,
+      "selected_on_validation": "quantile_boosting",
+      "validation_candidates": {
+        "ridge": {
+          "mae_kwh": 1758.47,
+          "rmse_kwh": 2589.52,
+          "r2": 0.0351
+        },
+        "extra_trees": {
+          "mae_kwh": 1753.71,
+          "rmse_kwh": 2585.25,
+          "r2": 0.0383
+        },
+        "quantile_boosting": {
+          "mae_kwh": 1621.58,
+          "rmse_kwh": 2691.33,
+          "r2": -0.0422
+        },
+        "training_median_baseline": {
+          "mae_kwh": 1664.49,
+          "rmse_kwh": 2726.6,
+          "r2": -0.0697
+        }
+      },
+      "test": {
+        "mae_kwh": 1660.07,
+        "rmse_kwh": 2731.47,
+        "r2": -0.0357
+      },
+      "test_median_baseline": {
+        "mae_kwh": 1706.83,
+        "rmse_kwh": 2779.37,
+        "r2": -0.0724
+      },
+      "limitation": "Unseen homes have different tariffs, heating systems, occupants and weather. Coarse inputs are weak predictors; report MAE and R\u00b2 honestly."
+    },
+    "gas": {
+      "valid_rows": 37186,
+      "test_rows": 7438,
+      "selected_on_validation": "quantile_boosting",
+      "validation_candidates": {
+        "ridge": {
+          "mae_kwh": 4497.24,
+          "rmse_kwh": 6178.14,
+          "r2": 0.1517
+        },
+        "extra_trees": {
+          "mae_kwh": 4480.8,
+          "rmse_kwh": 6165.54,
+          "r2": 0.1552
+        },
+        "quantile_boosting": {
+          "mae_kwh": 4391.43,
+          "rmse_kwh": 6255.62,
+          "r2": 0.1303
+        },
+        "training_median_baseline": {
+          "mae_kwh": 4864.54,
+          "rmse_kwh": 6811.85,
+          "r2": -0.0312
+        }
+      },
+      "test": {
+        "mae_kwh": 4358.6,
+        "rmse_kwh": 6164.92,
+        "r2": 0.136
+      },
+      "test_median_baseline": {
+        "mae_kwh": 4862.34,
+        "rmse_kwh": 6746.53,
+        "r2": -0.0347
+      },
+      "limitation": "Unseen homes have different tariffs, heating systems, occupants and weather. Coarse inputs are weak predictors; report MAE and R\u00b2 honestly."
+    }
+  }
+}

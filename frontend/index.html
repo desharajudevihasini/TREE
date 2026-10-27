@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1030">
+  <meta name="description" content="TREE — a playful home energy companion for greener decisions.">
+  <title>TREE ✦ After Dark</title>
+  <link rel="stylesheet" href="/static/styles.css?v=tree-rubric-20261011-2">
+  <link rel="stylesheet" href="/static/dark-theme.css?v=tree-rubric-20261011-2">
+</head>
+<body>
+<div id="shell">
+  <!-- One-page navigation. All buttons remain linked to the working energy tools. -->
+  <header class="sidebar" id="siteNav">
+    <button class="brand" id="brandHome" aria-label="TREE home">
+      <span class="brandmark" aria-hidden="true">✳</span>
+      <span><strong>tree</strong><small>AN ENERGY ADVENTURE</small></span>
+    </button>
+    <nav class="navgroup" aria-label="Explore TREE">
+      <button class="nav active" data-view="dashboard"><span>✦</span> Home</button>
+      <a class="nav nav-action" href="/app#locate"><span>⌖</span> Find my home</a>
+      <button class="nav" data-view="chat"><span>☄</span> Ask TREE</button>
+      <button class="nav" data-view="scenarios"><span>✳</span> Future worlds</button>
+      <button class="nav" data-view="ranking"><span>♧</span> Home explorer</button>
+      <button class="nav" data-view="evaluation"><span>✧</span> Our methods</button>
+      <a class="nav nav-action" href="/app#household"><span>☀</span> My habits</a>
+    </nav>
+    <button id="mobileMenu" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="workspace">
+    <div class="topbar">
+      <span class="crumb" id="crumb">DASHBOARD</span>
+      <div class="top-controls">
+        <label for="propertySelect">EXPLORE A HOME</label>
+        <select id="propertySelect"><option>Loading homes…</option></select>
+        <span class="online"><span class="dot"></span> DEMO MODE</span>
+      </div>
+    </div>
+
+    <main class="main">
+      <!-- Illustrated cosmic hero: original TREE art, inspired by the 2026 TreeHacks visual style. -->
+      <section class="welcome" id="welcome" aria-label="Welcome to TREE">
+        <img class="world-art" src="/static/art/green-universe.svg" alt="" aria-hidden="true">
+        <div class="cosmic-haze" aria-hidden="true"></div>
+        <div class="starfield" aria-hidden="true"></div>
+        <div class="spin-ring orbit-one" aria-hidden="true"></div>
+        <div class="spin-ring orbit-two" aria-hidden="true"></div>
+        <span class="sky-star s1" aria-hidden="true">✦</span>
+        <span class="sky-star s2" aria-hidden="true">✧</span>
+        <span class="sky-star s3" aria-hidden="true">✳</span>
+        <span class="sky-star s4" aria-hidden="true">✧</span>
+        <span class="sky-star s5" aria-hidden="true">✦</span>
+        <span class="sky-star s6" aria-hidden="true">✳</span>
+        <div class="hero-stamp stamp-left" aria-hidden="true"><span>✦</span> A BRIGHTER<br>HOME IS<br>POSSIBLE</div>
+        <div class="hero-stamp stamp-right" aria-hidden="true">LESS WASTE<br>MORE WONDER <span>✳</span></div>
+
+        <div class="hero-center">
+          <div class="orbit-antenna" aria-hidden="true"><i></i><i></i><i></i><b>✦</b></div>
+          <div class="hero-sign" id="heroSign">
+            <span class="sign-bolt bolt-left" aria-hidden="true"></span>
+            <span class="sign-bolt bolt-right" aria-hidden="true"></span>
+            <div class="sign-interior">
+              <div class="sign-heading">✦  YOUR HOME HAS A FUTURE  ✦</div>
+              <h1><span class="sign-tree">TREE<span class="tree-leaf">✳</span></span></h1>
+              <div class="hero-line" aria-hidden="true"><span></span>✦<span></span></div>
+              <p>THE HOME ENERGY ADVENTURE</p>
+              <span class="hero-mini-asterisk" aria-hidden="true">✿</span>
+            </div>
+          </div>
+          <div class="sign-tail" aria-hidden="true"></div>
+          <p class="hero-date">GROW A GREENER FUTURE, ONE HOME AT A TIME</p>
+          <div class="hero-links">
+            <button class="hero-cta" id="heroExplore">FIND MY HOME <span>↗</span></button>
+            <button class="hero-secondary" id="heroAsk">ASK TREE <span>✦</span></button>
+          </div>
+        </div>
+        <a class="scroll-hint" href="#about" aria-label="Scroll to TREE story">SCROLL TO DISCOVER <span>↓</span></a>
+        <div class="hero-ground" aria-hidden="true"></div>
+      </section>
+
+      <!-- 3. Illustrated editorial sections, like the TreeHacks page. -->
+      <section class="intro-section" id="about">
+        <div class="intro-copy">
+          <span class="section-kicker">✦ 01 &nbsp; / &nbsp; ABOUT TREE</span>
+          <h2>YOUR HOME HAS<br>SO MANY <em>FUTURES.</em></h2>
+          <p>What if your home could show you what happens next? Confirm its EPC, answer the questions that matter, and explore energy upgrades with their estimated savings, carbon impact, and cost — before you make a decision.</p>
+          <p>We don't just say <strong>"go green."</strong> We let you try the possibilities.</p>
+          <button class="ink-link" id="aboutExplore">TAKE A LOOK INSIDE <span>↗</span></button>
+        </div>
+        <div class="intro-illustration" aria-label="Illustrated energy-smart house" role="img">
+          <div class="planet-orbit orbit-a" aria-hidden="true"></div>
+          <div class="planet-orbit orbit-b" aria-hidden="true"></div>
+          <div class="intro-sun" aria-hidden="true">✳</div>
+          <div class="floating-mini-house" aria-hidden="true">
+            <div class="mini-roof"><span class="solar-tilt"></span></div>
+            <div class="mini-body"><span class="mini-window">✦</span><span class="mini-door"></span></div>
+          </div>
+          <span class="intro-moon" aria-hidden="true">☾</span>
+          <span class="intro-star left" aria-hidden="true">✦</span>
+          <span class="intro-star right" aria-hidden="true">✶</span>
+          <div class="intro-caption">A LITTLE HOUSE, A BIGGER POSSIBILITY!</div>
+        </div>
+      </section>
+
+      <section class="numbers-strip" aria-label="TREE at a glance">
+        <div><strong>7</strong><span>SCORING SIGNALS</span></div>
+        <div><strong>5</strong><span>RETROFIT OPTIONS</span></div>
+        <div><strong>3</strong><span>POSSIBLE FUTURES</span></div>
+        <div><strong>1</strong><span>HOME, MANY CHOICES</span></div>
+      </section>
+
+      <section class="experience-section" id="adventures">
+        <span class="section-kicker">✦ 02 &nbsp; / &nbsp; PICK YOUR PATH</span>
+        <h2>WHERE WILL YOUR<br><em>HOME GO NEXT?</em></h2>
+        <p class="experience-intro">The same little worlds, now connected to our location-first EPC scan, explainable score, what-if engine and two-way decision coach.</p>
+        <div class="experience-orbit" aria-label="Explore TREE features">
+          <svg class="orbit-lines" viewBox="0 0 1200 410" preserveAspectRatio="none" aria-hidden="true"><path d="M60 260C248 42 393 80 574 227S919 449 1140 169"/><path d="M100 90C300 415 828-75 1090 333"/></svg>
+          <button class="experience-card card-green" data-app="locate"><span class="experience-symbol">⌂</span><small>EXPLORE 01</small><strong>HOME<br>LAB</strong><span>Find my home ↗</span></button>
+          <button class="experience-card card-yellow" data-app="future"><span class="experience-symbol">✦</span><small>EXPLORE 02</small><strong>FUTURE<br>WORLDS</strong><span>Three possible paths ↗</span></button>
+          <button class="experience-card card-blue" data-app="chat"><span class="experience-symbol">☄</span><small>EXPLORE 03</small><strong>ASK<br>TREE</strong><span>Ask, challenge, decide ↗</span></button>
+          <button class="experience-card card-pink" data-app="methods"><span class="experience-symbol">♧</span><small>EXPLORE 04</small><strong>HOME<br>EXPLORER</strong><span>Discover potential ↗</span></button>
+        </div>
+        <div class="path-caption">✳ CHOOSE A PLANET TO BEGIN ✳</div>
+      </section>
+
+      <div class="lab-ribbon" id="labStart"><span>✳ &nbsp; THE TREE LAB &nbsp; ✳</span><strong>READY, SET, REIMAGINE!</strong><span>✳ &nbsp; THE TREE LAB &nbsp; ✳</span></div>
+
+<section class="scan-callout" id="treeScan">
+  <div class="scan-copy"><span class="section-kicker">✦ 03 / THE REAL HOME JOURNEY</span><h2>FIRST, LET'S<br><em>MEET YOUR HOME.</em></h2><p>Your house deserves better than one-size-fits-all advice. With permission, TREE can suggest a UK postcode, look for available EPC certificates, ask about missing details, and calculate a transparent seven-part Green Home Score.</p><p class="scan-note">No certificate? Start manually. No bill? Our model estimates with clear warnings. We never pretend GPS identifies your exact house.</p><a class="hero-cta scan-button" href="/app#locate">⌖ &nbsp; START MY HOME SCAN <span>↗</span></a></div>
+  <div class="scan-steps" aria-label="TREE's calculation stages"><div><b>01</b><strong>LOCATE</strong><small>Confirm the exact UK property</small></div><div><b>02</b><strong>ASK</strong><small>Fill important EPC gaps</small></div><div><b>03</b><strong>SCORE</strong><small>Understand all seven weights</small></div><div><b>04</b><strong>PLAN</strong><small>Compare budget, energy and carbon</small></div><div><b>05</b><strong>CHAT</strong><small>Question every recommendation</small></div></div>
+</section>
+
+      <!-- 4. Original functional tools. These IDs are connected to app.js/backend. -->
+      <div class="content-columns" id="lab">
+        <div class="primary">
+          <section class="view active" id="view-dashboard">
+            <div class="section-top"><div><div class="eyebrow">GREEN HOME LAB · LLOYDS PS2</div><h2>Your home. Your next move.</h2><p>See how the engine works on a clearly labelled demonstration home. To analyse your own, use the new location-first scan.</p></div></div>
+            <div class="homeflow-links"><a href="/app#locate">⌖ Find my property & EPC ↗</a><a href="/app#home">✳ Explain my seven-part score ↗</a><a href="/app#household">☀ Bills, appliances & daily tips ↗</a><a href="/app#chat">✦ Two-way TREE coach ↗</a></div>
+            <div id="dashboardSummary" class="dash-summary loading">Warming up your home lab…</div>
+            <!-- Legacy example home editor; official EPC lookup and adaptive questions live in the full home scan. -->
+            <details class="custom-editor" id="customEditor">
+              <summary>✳ Try a different home <span>Enter your own details ↗</span></summary>
+              <p class="editor-hint">Use details you know (or try hypothetical values). An EPC grade typed here is <b>not</b> verified against the official register. If readings are missing, TREE clearly labels a population-model or demo estimate; use Find my home for the full EPC-aware flow.</p>
+              <form id="customPropertyForm">
+                <div class="editor-grid">
+                  <label>Home label (not full address)<input name="name" maxlength="70" value="My test home" required></label>
+                  <label>Region<input name="region" maxlength="70" value="North West" required></label>
+                  <label>Property type<select name="property_type"><option value="terraced">Terraced</option><option value="semi_detached" selected>Semi-detached</option><option value="detached">Detached</option><option value="flat">Flat</option><option value="bungalow">Bungalow</option></select></label>
+                  <label>Floor area (m²)<input name="floor_area_m2" type="number" min="15" max="1500" value="105" step="1" required></label>
+                  <label>Main heating<select name="heating_type"><option value="gas_boiler">Gas boiler</option><option value="heat_pump">Heat pump</option><option value="electric_resistance">Electric heating</option><option value="district">District heating</option></select></label>
+                  <label>Windows<select name="glazing"><option value="single">Single glazing</option><option value="double" selected>Double glazing</option><option value="triple">Triple glazing</option></select></label>
+                  <label>Loft insulated?<select name="loft_insulated"><option value="unknown" selected>Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+                  <label>Walls insulated?<select name="wall_insulated"><option value="unknown" selected>Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+                  <label>Smart heating controls?<select name="smart_controls"><option value="unknown" selected>Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+                  <label>Suitable solar roof?<select name="roof_suitable"><option value="unknown" selected>Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+                  <label>Space for heat pump?<select name="outdoor_space"><option value="unknown" selected>Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+                  <label>Existing solar (kWp)<input name="solar_kwp" type="number" min="0" max="40" value="0" step="0.1"></label>
+                  <label>Annual electricity (kWh)<input name="annual_electricity_kwh" type="number" min="0" max="200000" step="1" placeholder="Blank = estimate"></label>
+                  <label>Annual gas (kWh)<input name="annual_gas_kwh" type="number" min="0" max="400000" step="1" placeholder="Blank = estimate"></label>
+                  <label>Budget (£)<input name="budget_gbp" type="number" min="0" max="30000" value="5000" step="250"></label>
+                  <label>EPC grade (optional)<select name="epc_rating"><option value="">Unknown / unchecked</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option></select></label>
+                </div>
+                <div class="editor-actions"><button class="dash-primary" type="submit">Use these home details ↗</button><span id="customResult" role="status" aria-live="polite">Nothing sent to a mapping or EPC service.</span></div>
+              </form>
+              <p class="editor-source">For a genuine England/Wales EPC, <a href="/app#locate">use TREE’s EPC onboarding</a>. It requires configured provider credentials and explicit address confirmation. You can still search the <a href="https://www.gov.uk/find-energy-certificate" target="_blank" rel="noopener noreferrer">official government register</a>.</p>
+            </details>
+            <div class="dash-heading"><h3>Choose your upgrades <span>✦</span></h3><span>Select one or more</span></div>
+            <div id="retrofitChoices" class="retrofit-grid">Loading upgrades…</div>
+            <div class="dash-actions"><button class="dash-primary" id="calculateRetrofit">✳ CALCULATE UPGRADES</button><button class="soft-button" id="findBest">BEST PACKAGE FOR MY BUDGET ↗</button></div>
+            <div id="dashboardResults" aria-live="polite"></div>
+            <p class="smallprint">Illustrative estimates with synthetic demonstration data. Not a certified EPC or financial valuation.</p>
+          </section>
+
+          <section class="view" id="view-chat">
+            <div class="section-top"><div><div class="eyebrow">YOUR ENERGY SIDEKICK</div><h2>Ask TREE ✦</h2><p>Questions, trade-offs, and better decisions for your home.</p></div></div>
+            <div id="chatMessages" class="chat-messages"><div class="message-row assistant"><div class="avatar">✳</div><div class="bubble"><div class="speaker">TREE</div><p>Hello! Want to explore solar, heating, or a more affordable home?</p></div></div></div>
+            <div id="chatInsights"></div>
+            <div class="suggestions"><button class="chip" data-prompt="I have £5,000 and I want solar panels. What should I do?">☀ Solar or insulation?</button><button class="chip" data-prompt="What is my Green Home Score?">◎ My score</button><button class="chip" data-prompt="Compare three futures for my house">✦ Three futures</button><button class="chip" data-prompt="Show me Retrofit Chess sequence">♟ Upgrade order</button></div>
+            <form id="composer"><input id="promptInput" type="text" placeholder="Ask anything about your home…" autocomplete="off" required maxlength="3000"><button id="sendButton" type="submit">ASK ↗</button></form>
+            <p class="composer-tip">The energy numbers come from our calculation engine, not generated prose.</p>
+          </section>
+
+          <section class="view" id="view-scenarios"><div class="section-top"><div><div class="eyebrow">FUTURE WORLDS</div><h2>Three futures. One home.</h2><p>Compare outcomes with the same starting assumptions.</p></div><button class="soft-button" id="refreshScenarios">↻ RECALCULATE</button></div><div id="scenarioResults" class="loading">Loading possible futures…</div></section>
+          <section class="view" id="view-ranking"><div class="section-top"><div><div class="eyebrow">HOME EXPLORER</div><h2>Where can change matter most?</h2><p>Rank demonstration homes by their feasible purchased-energy reduction.</p></div></div><div id="rankingResults" class="loading">Ranking homes…</div></section>
+          <section class="view" id="view-evaluation"><div class="section-top"><div><div class="eyebrow">BEHIND THE CURTAIN</div><h2>Show your working.</h2><p>Methods, limitations, and reproducible evidence—not unexplained numbers.</p></div></div><div id="evaluationResults"></div></section>
+        </div>
+
+        <aside class="inspector">
+          <div class="panel-kicker">✦ YOUR HOME'S ENERGY ID</div>
+          <div id="scoreCard" class="scorecard loading">Loading your Green Home Score…</div>
+          <div class="inspector-section"><div class="panel-title">ABOUT THIS HOME</div><div id="snapshot"></div></div>
+          <div class="inspector-section"><div class="panel-title">YOUR UPGRADE BUDGET</div><div class="budget"><span id="budgetValue">£5,000</span><button id="editBudget">CHANGE ↗</button></div><input id="budgetRange" type="range" min="0" max="30000" step="250" value="5000"><div class="range-labels"><span>£0</span><span>£30K</span></div></div>
+          <div class="inspector-section"><a class="inspector-cta" href="/app#home">VIEW ALL 7 SCORE EXPLANATIONS ↗</a></div><div class="inspector-section"><div class="panel-title">GOOD TO KNOW</div><p class="note">Synthetic properties. Modelled savings and carbon. This prototype is not a certified assessment.</p></div>
+        </aside>
+      </div>
+      <footer class="site-footer"><strong>TREE <span>✳</span></strong><p>A LITTLE BETTER, ONE HOME AT A TIME.</p><small>Hackathon demonstrator · synthetic data · transparent assumptions</small></footer>
+    </main>
+  </div>
+</div>
+<script src="/static/app.js?v=tree-original-updated-20261011" defer></script>
+</body>
+</html>

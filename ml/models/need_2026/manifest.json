@@ -1,0 +1,115 @@
+{
+  "dataset": "UK NEED 2026 anonymised sample",
+  "mode": "property_only",
+  "features": [
+    "PROP_TYPE",
+    "PROP_AGE_BAND",
+    "FLOOR_AREA_BAND",
+    "REGION",
+    "MAIN_HEAT_FUEL",
+    "CONSERVATORY_FLAG",
+    "COUNCIL_TAX_BAND",
+    "EPC",
+    "LI_FLAG",
+    "CWI_FLAG",
+    "PV_FLAG"
+  ],
+  "training": {
+    "electricity": {
+      "model": "hist_gradient_boosting",
+      "training_records": 36171,
+      "held_out_records": 9043
+    },
+    "gas": {
+      "model": "hist_gradient_boosting",
+      "training_records": 29748,
+      "held_out_records": 7438
+    }
+  },
+  "disclaimer": "Research benchmark on official categorical fields. Not a validated EPC lookup or retrofit-savings model.",
+  "allowed_values": {
+    "PROP_TYPE": [
+      "Bungalow",
+      "Detached",
+      "End terrace",
+      "Flat",
+      "Mid terrace",
+      "Semi detached",
+      "Unknown"
+    ],
+    "PROP_AGE_BAND": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Unknown"
+    ],
+    "FLOOR_AREA_BAND": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Unknown"
+    ],
+    "CONSERVATORY_FLAG": [
+      "0",
+      "1",
+      "Unknown"
+    ],
+    "COUNCIL_TAX_BAND": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "Unknown"
+    ],
+    "REGION": [
+      "E12000001",
+      "E12000002",
+      "E12000003",
+      "E12000004",
+      "E12000005",
+      "E12000006",
+      "E12000007",
+      "E12000008",
+      "E12000009",
+      "Unknown",
+      "W92000004"
+    ],
+    "EPC": [
+      "A/B",
+      "C",
+      "D",
+      "E",
+      "F/G",
+      "No EPC",
+      "Unknown"
+    ],
+    "LI_FLAG": [
+      "0",
+      "1",
+      "Unknown"
+    ],
+    "CWI_FLAG": [
+      "0",
+      "1",
+      "Unknown"
+    ],
+    "PV_FLAG": [
+      "0",
+      "1",
+      "Unknown"
+    ],
+    "MAIN_HEAT_FUEL": [
+      "1",
+      "2",
+      "Unknown"
+    ]
+  }
+}

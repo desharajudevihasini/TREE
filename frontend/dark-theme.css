@@ -1,0 +1,247 @@
+/*
+ TREE / AFTER DARK
+ -----------------
+ Dark-mode visual overrides. All calculations and interactions remain
+ in app.js and the Python backend. The original illustrated hero stays.
+ Color roles:
+   #0c1030  cosmic sky / page background
+   #141d42  midnight surface
+   #1c2854  raised surface
+   #f7f3dc  warm text
+   #83e6c1  renewable-energy highlight
+   #ffe087  optimistic golden CTA
+*/
+:root {
+    color-scheme: dark;
+    --night: #0c1030;
+    --navy: #101739;
+    --ink: #f7f3dc;
+    --cream: #141d42;
+    --paper: #182248;
+    --yellow: #ffe087;
+    --green: #83e6c1;
+    --sea: #77d8e9;
+    --muted: #b4c6e7;
+    --border: #536aaa;
+    --dark-back: #0d1432;
+    --dark-card: #182348;
+    --dark-raised: #23315e;
+    --dark-line: #465b91;
+    --light-text: #f6f4e6;
+    --soft-text: #bac9e6;
+}
+html, body {background:#0c1030; color:var(--light-text);}
+body {background: radial-gradient(ellipse at 70% 0,#28346f 0,transparent 34%),#0c1030;}
+a {color:#a1ffe4;}
+button {transition: transform .15s, background-color .15s, border-color .15s, box-shadow .15s;}
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible {outline-color:#ffe087;outline-offset:4px;}
+
+/* 1. Landing scene and navigation — keep the original cosmic illustration. */
+.sidebar {background:linear-gradient(180deg,#0b1031ed, #0e1648b5 75%,transparent);}
+.brand strong {color:#f8f6e7;}
+.brand small {color:#c5d5f5;}
+.brandmark {background:#ffe087;box-shadow:0 0 22px #ffe08744,0 5px 0 #0d1032;}
+.nav {color:#eff2ff;border-radius:999px;}
+.nav:hover {background:#46519d99;color:#fff;}
+.nav.active {background:#ffe087;color:#13214e;box-shadow:0 5px 0 #060b22;}
+.menu-toggle {border-radius:50%;background:#ffe087;min-height:43px;min-width:43px;}
+.top-controls {background:#111942ed;border:1px solid #6578b6;border-radius:999px;box-shadow:0 12px 35px #05071b40;}
+.top-controls label,.online {color:#ffe69d;}
+.top-controls select {color:#f9f6e6;background:#263665;border:1px solid #7893c7;border-radius:999px;}
+.top-controls select option {background:#192449;color:#f8f6e7;}
+.welcome {background:#0e1446;}
+.hero-stars {background:radial-gradient(ellipse at 50% 34%,#646fc02f,transparent 52%);}
+/* The warm cream sign is intentional: the main focal point glows against the sky. */
+.hero-sign {filter:drop-shadow(0 10px 35px #000529a8);border-radius:52px;}
+.sign-interior {border-radius:38px;}
+.hero-links button {border-radius:999px;}
+.hero-cta {background:#ffdc75;color:#192351;}
+.hero-secondary {background:#d4fce9;color:#115642;}
+.scroll-hint {color:#fff3c3;}
+
+/* 2. Editorial / story area — remove all wide bright backgrounds. */
+.intro-section {
+    background: radial-gradient(ellipse at 80% 50%,#26386d 0,transparent 50%),
+                linear-gradient(165deg,#111936,#17234d 75%,#1a244e);
+    border-top:1px solid #425c93;
+    color:var(--light-text);
+}
+.section-kicker {color:#ffe08b;}
+.intro-copy h2,.experience-section h2 {color:#fff6dc;text-shadow:0 4px 0 #0b1232;}
+.intro-copy h2 em,.experience-section h2 em,.intro-copy strong {color:#92eac6;}
+.intro-copy p {color:#c6d4eb;}
+.ink-link {background:#ffe087;color:#192451;border-color:#263966;border-radius:999px;box-shadow:0 6px 0 #070f30;}
+.ink-link:hover {background:#ffefae;}
+.intro-illustration {
+    background: radial-gradient(circle at 50% 48%,#40588c 0 39%,#2a3b71 40% 64%,transparent 65%);
+}
+.planet-orbit {border-color:#81c3bc99;}
+.planet-orbit.orbit-b {border-color:#e1c9878e;}
+.intro-caption {color:#1a2c5e;background:#ffdf8c;box-shadow:0 6px 0 #0a1339;}
+.floating-mini-house {filter:drop-shadow(9px 14px 0 #0b1c39);}
+.numbers-strip {
+    background:linear-gradient(95deg,#1b285a,#1c2964 45%,#141b48);
+    border-top:5px solid #4e5b93;border-bottom:5px solid #47588d;
+}
+.numbers-strip strong {color:#ffe087;}
+.numbers-strip span {color:#dee9ff;}
+.experience-section {
+    background:radial-gradient(ellipse at 50% 45%,#263e65 0,transparent 57%),
+               linear-gradient(180deg,#121b3b 0,#152650 66%,#131b3d 100%);
+}
+.experience-intro {color:#c2d1ec;}
+.orbit-lines path {stroke:#80b7c4aa;}
+.path-caption {color:#b3f0d0;border-color:#639d97;background:#1b3653;}
+/* Richer jewel tones for the planet buttons, with legible warm labels. */
+.experience-card {border-color:#697fb4;box-shadow:0 12px 0 #090e2d,0 24px 35px #02061775;}
+.experience-card.card-green {background:linear-gradient(140deg,#2c826f,#205a68);color:#fff9de;}
+.experience-card.card-yellow {background:linear-gradient(140deg,#a66e39,#7b536e);color:#fff9dc;}
+.experience-card.card-blue {background:linear-gradient(140deg,#3569a0,#454f9b);color:#fff9e5;}
+.experience-card.card-pink {background:linear-gradient(140deg,#995b78,#694b8c);color:#fff9e5;}
+.experience-card small,.experience-card >span:last-child {color:#e5f0fa;}
+.experience-card .experience-symbol {color:#ffe39d;text-shadow:0 3px 0 #15244c;}
+.experience-card:nth-of-type(n):hover {box-shadow:0 17px 0 #09102d,0 35px 45px #02061799;}
+.lab-ribbon {background:#ffe087;color:#1b285a;border-color:#121a43;}
+
+/* 3. Dashboard — readable, dark, and fully rounded. */
+.content-columns {
+    background:radial-gradient(ellipse at 80% 0,#293865aa,transparent 45%),
+               linear-gradient(175deg,#0f1736,#121b3b 60%,#0e142c);
+}
+.view,.inspector {
+    background:linear-gradient(145deg,#202d57,#141e42);
+    color:#f5f5e8;
+    border:2px solid #6378ad;
+    border-radius:34px;
+    box-shadow:0 13px 0 #070d26,0 25px 28px #050a1d66;
+}
+.view h2,.section-top h2 {color:#fff6df;}
+.section-top p,.dash-heading>span,.loading {color:#bed0ee;}
+.eyebrow,.panel-kicker,.panel-title {color:#ffe092;}
+.dash-summary {background:linear-gradient(130deg,#244e64,#223a64);border:2px solid #75b8ad;border-radius:27px;color:#f8f8e7;}
+.dash-summary h3 {color:#f4f6e4;}
+.dash-summary p,.dash-kicker {color:#c3e9dc;}
+.dash-big {color:#a9f3d6;}
+.dash-heading h3 {color:#f7f6e9;}
+.dash-heading h3 span {color:#ffe087;}
+.retrofit-choice {
+    background:linear-gradient(150deg,#22315b,#192348);
+    border:2px solid #566d9f;
+    color:#f7f5e7;
+    border-radius:27px;
+    box-shadow:0 5px 0 #0a1131;
+}
+.retrofit-choice:hover {background:#2b3c6d;border-color:#84afcb;box-shadow:0 8px 0 #07102a;}
+.retrofit-choice.selected {background:linear-gradient(130deg,#235766,#264e4c);border-color:#a8f0d4;box-shadow:0 5px 0 #0b353c;}
+.retrofit-choice small {color:#c5d2e9;}
+.retrofit-choice>span:nth-last-child(2) {color:#9cecca;}
+.choice-tag {background:#275263;color:#cef8e4;border:1px solid #6bb99f;border-radius:999px;}
+.dash-primary,.soft-button {border-radius:999px;border:2px solid #6b86b9;min-height:46px;}
+.dash-primary {background:#ffe087;color:#16275a;box-shadow:0 5px 0 #080f2d;}
+.dash-primary:hover {background:#ffedaf;}
+.soft-button {background:#263c6e;color:#f6f4dc;box-shadow:0 5px 0 #080f2d;}
+.soft-button:hover {background:#3a5389;}
+.dash-result {background:#1f4157;border:2px solid #6eaeaf;color:#f8f4e5;border-radius:24px;}
+.dash-result h3 {color:#f5f4e4;}
+.dash-metrics>div {background:#1b3052;border:1px solid #506e89;border-radius:18px;}
+.dash-metrics strong {color:#a6f2d8;}
+.dash-metrics span,.smallprint {color:#b6c7de;}
+.error {background:#522b3d;color:#ffe0d7;border:1px solid #ce8d99;border-radius:18px;}
+
+/* 4. Right-side scoring inspector. */
+.score-circle {border-color:#7abeb8;box-shadow:0 0 25px #74c9b52c;}
+.score-circle-inner {background:#13244b;}
+.score-number {color:#fff0a5;}
+.score-number small {color:#c1cadc;}
+.score-name {color:#a1eed3;}
+.score-caption {color:#b6c7e1;}
+.inspector-section {border-top-color:#4c618e;}
+.snapshot-row,.metric-line {border-bottom-color:#344775;}
+.snapshot-row span,.metric-line span {color:#b8c9e5;}
+.snapshot-row b,.metric-line b {color:#f4f4e8;}
+.budget span {color:#ffe096;}
+.budget button {color:#9de8c9;}
+input[type=range] {accent-color:#92eaca;}
+.range-labels,.note {color:#afc2e1;}
+
+/* 5. Chat, futures, ranking, methodology. */
+.avatar {background:#ffe091;}
+.bubble {background:#243e57;border:1px solid #558f9a;color:#f4f5e8;border-radius:25px;}
+.user .bubble {background:#41416a;border-color:#8076ad;border-radius:25px;}
+.bubble .subdued {color:#adc5d9;}
+.speaker {color:#a5f4d4;}
+.chip {background:#243861;color:#ebefff;border:1px solid #5877b4;border-radius:999px;}
+.chip:hover {background:#365786;color:#fff4dc;}
+.quickanswers button {color:#c6f9e3;background:#244a4f;border:1px solid #6bb3a3;border-radius:999px;}
+#composer {background:#1c2b52;border:1px solid #7188b9;border-radius:999px;}
+#composer input {background:transparent;color:#fff9e6;border-radius:999px;}
+#composer input::placeholder {color:#a9bddc;opacity:1;}
+#composer button {background:#ffe08a;color:#192857;border:1px solid #e6c66e;border-radius:999px;}
+.composer-tip {color:#b9cce8;}
+.scenario-card {background:#1e3850;border:1px solid #64939a;border-radius:24px;}
+.scenario-card:nth-child(2) {background:#3b3758;border-color:#9f8bbc;}
+.scenario-card h3,.scenario-card .number {color:#c0f7db;}
+.scenario-card .unit {color:#b9c6df;}
+.insight {background:#1c3953;border:1px solid #66899f;border-radius:23px;}
+.insight-title {color:#a3efcc;}
+.insight p {color:#d2e1ed;}
+.metric {background:#253254;border:1px solid #556998;color:#f7f5e7;border-radius:18px;}
+.metric strong {color:#fff0a9;}
+.metric span {color:#c1d0e9;}
+.bar-track {background:#354466;}
+.bar-fill {background:#93e7c5;}
+.bar-label {color:#dce5f6;}
+.ranking-table {color:#f5f5e7;}
+.ranking-table th {background:#2b3d67;color:#e6f0ff;}
+.ranking-table td {border-bottom:1px solid #3b4b73;}
+.ranking-table tr:hover td {background:#2b3965;}
+.rank-index,.pill {background:#234d57;color:#b0f6d9;border-radius:999px;}
+.detail-list span {background:#3c3c60;color:#ffe8ac;border-radius:999px;}
+.eval-panel {background:#202e52;border:1px solid #536c99;border-radius:23px;}
+.eval-panel h3 {color:#fff4da;}
+.eval-panel p {color:#cbdaee;}
+.warning {background:#4f3a3b;color:#ffe8bb;border:1px solid #9d7770;border-radius:23px;}
+.site-footer {background:#080d25;border-top:7px solid #4c6198;color:#ffe6a1;}
+.site-footer strong {color:#faf4db;}
+.site-footer small {color:#b7c5e9;}
+
+/* 6. Mobile layout — keep round buttons and readable contrasts. */
+@media(max-width:880px) {
+    .sidebar {background:linear-gradient(#101741d9,#1017416b);}
+    .topbar {background:transparent;}
+    .intro-section {background:linear-gradient(165deg,#101a3a,#1d2c55);}
+}
+@media(max-width:680px) {
+    .navgroup {background:#18234f;border:1px solid #566bac;}
+    .top-controls {border-radius:20px;}
+    .view,.inspector {border-radius:25px;}
+    .hero-sign {border-radius:33px;}
+    .sign-interior {border-radius:23px;}
+    #composer {border-radius:24px;}
+    #composer input {min-width:0;}
+}
+
+/* Final addition: optional self-entered home. Matches existing dark pill theme. */
+.custom-editor { margin:20px 0 28px; padding:17px 20px 19px; border:1px solid #667bad; border-radius:28px; background:#162044; color:#f4f5e8; }
+.custom-editor summary { cursor:pointer; list-style:none; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:10px; color:#ffe087; font-size:17px; font-weight:800; }
+.custom-editor summary::-webkit-details-marker { display:none; }
+.custom-editor summary span { font-size:12px; border-radius:999px; border:1px solid #7385ba; padding:9px 14px; background:#23335f; color:#dbecff; }
+.editor-hint,.editor-source { line-height:1.65; color:#c3d3ed; font-size:12px; max-width:760px; }
+.editor-source a { color:#a4efcf; }
+.editor-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; margin:18px 0; }
+.editor-grid label { display:flex; flex-direction:column; gap:7px; font-weight:700; color:#d3e0f8; font-size:12px; }
+.editor-grid input,.editor-grid select { min-width:0; padding:11px 13px; border-radius:16px; border:1px solid #6f84b7; background:#21315d; color:#fff8e0; font-size:14px; font-family:inherit; }
+.editor-grid input::placeholder { color:#abc0da; }
+.editor-actions { display:flex; align-items:center; flex-wrap:wrap; gap:15px; }
+.editor-actions span { flex:1; font-size:12px; color:#afdacb; min-width:160px; line-height:1.5; }
+@media(max-width:950px) {.editor-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }}
+@media(max-width:600px) {.editor-grid { grid-template-columns:1fr; } .custom-editor {padding:16px;} }
+
+/* Final integration: original illustrated screenshot, updated evidence-first flow. */
+.nav.nav-action{display:flex;align-items:center;gap:10px;text-decoration:none;color:#f9e8ac;cursor:pointer}
+.scan-callout{scroll-margin-top:90px;background:radial-gradient(circle at 90% 20%,#405b94 0%,transparent 39%),linear-gradient(138deg,#111c41,#1b2e68 78%);color:#ffedb9;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;border-block:5px solid #ffdf83;padding:clamp(30px,6vw,90px);align-items:center}
+.scan-copy .section-kicker{color:#ffd978}.scan-copy h2{font-size:clamp(34px,5.2vw,72px);line-height:1.02;margin:20px 0;letter-spacing:-.055em;color:#fff4ce}.scan-copy h2 em{font-style:normal;color:#9eefd2}.scan-copy p{font-size:clamp(14px,1.6vw,18px);color:#dbe6ff;max-width:680px}.scan-copy .scan-note{font-size:13px;color:#ffdc8d}.scan-button{display:inline-flex;gap:20px;align-items:center;margin:22px 0 0;text-decoration:none!important;background:#ffdc7e;color:#17234d!important;box-shadow:0 7px 0 #0a1436;font-weight:900;padding:17px 26px;border-radius:36px}
+.scan-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.scan-steps div{border:2px solid #7295c5;background:#20356a;border-radius:25px;min-height:118px;padding:20px;display:grid;gap:0;box-shadow:0 6px 0 #0e1c48}.scan-steps div:first-child{grid-column:1/-1;background:#285c66}.scan-steps b{font-size:28px;color:#ffe18c;line-height:1}.scan-steps strong{font-size:16px;letter-spacing:.08em;color:#fff5cc}.scan-steps small{color:#c9deef;font-size:12px}
+.homeflow-links{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 25px}.homeflow-links a{display:inline-flex;align-items:center;border:2px solid #6e89c0;border-radius:25px;background:#263d79;color:#fff3ce;font-size:12px;font-weight:800;padding:13px 16px;text-decoration:none;box-shadow:0 4px 0 #111b3b}.homeflow-links a:hover,.inspector-cta:hover{background:#395394;transform:translateY(-2px)}.inspector-cta{display:block;padding:14px;border:2px solid #aad9ca;border-radius:19px;color:#e9fcd9;text-decoration:none;text-align:center;font-weight:800;font-size:12px;line-height:1.4}
+@media(max-width:850px){.scan-callout{grid-template-columns:1fr;gap:2rem;padding:34px 21px}.scan-steps{gap:8px}.scan-steps div{min-height:100px;padding:13px}.scan-copy h2{font-size:43px}}
+@media(prefers-reduced-motion:reduce){.scan-button,.homeflow-links a{transition:none}}
