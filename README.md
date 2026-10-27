@@ -66,7 +66,7 @@ TREE combines property information, energy calculations, machine-learning compon
 
 **Demo Video:** Coming soon!
 
-**Live Website:** Coming soon!
+**Live Website:** link:
 
 ## 🚀 Running TREE Locally
 
@@ -122,7 +122,6 @@ Our team advanced to **Round 2**, where we had the opportunity to develop and pr
 
 - Improve energy prediction accuracy with additional validated datasets.
 - Expand retrofit recommendations.
-- Refine the user experience.
 - Improve explanations and uncertainty reporting.
 - Explore more comprehensive property-energy assessments.
 
@@ -134,6 +133,5 @@ Our team advanced to **Round 2**, where we had the opportunity to develop and pr
 
 *Because making your home greener shouldn't require you to be an energy expert.*
 
-**Built with curiosity, code, and a lot of experimentation.**
 
 </div>
