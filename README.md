@@ -66,7 +66,7 @@ TREE combines property information, energy calculations, machine-learning compon
 
 **Demo Video:** Coming soon!
 
-**Live Website:** link:https://tree-n3yk.onrender.com/app#locate
+**Live Website:** [Launch TREE](https://tree-n3yk.onrender.com/app#locate)
 
 ## 🚀 Running TREE Locally
 
